@@ -1,0 +1,31 @@
+﻿@page
+@model SimpleChat.Pages.IndexModel
+
+
+<html>
+<body>
+    <p>
+        Simple Chat Login
+    </p>
+    <div asp-validation-summary="All"></div>
+    <form method="post" asp-antiforgery="false">
+        <div>
+            <div class="form-group">
+                <label>Введите Login</label>
+                <input type="text" asp-for="Model.Login" />
+                <span asp-validation-for="Model.Login"></span>
+                
+            </div>
+            <div class="form-group">
+                <label>Введите пароль</label>
+                <input asp-for="Model.Password" />
+                <span asp-validation-for="Model.Password"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Войти" />
+            </div>
+        </div>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business", "Business", "{6CB7BCAC-3812-4AB5-89F4-746AA47715CD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "External", "External", "{E33F3ED3-FC7B-4872-BABB-EAB03E1CE162}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Host", "Host", "{AA01DB42-BB64-49FD-A626-63A92B4970A3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{FF212D73-B8A1-49ED-BFF5-E93F8D5DEECE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleChat.Messaging", "SimpleChat.Business.Logic\SimpleChat.Messaging.csproj", "{76410E88-20A7-4734-95DA-C5EC5C75C121}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleChat.Messaging.Database.Sqlite", "SimpleChat.External.RepositoryR\SimpleChat.Messaging.Database.Sqlite.csproj", "{7AD12B32-7C9B-41F6-B13C-1E7887141946}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{847E4364-B5D0-4A62-9D6B-8E3EE85783B7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleChat.Messaging.Database.Sqlite.Tests", "SimpleChat.Messaging.Database.Sqlite.Tests\SimpleChat.Messaging.Database.Sqlite.Tests.csproj", "{166A0A79-D384-4218-8261-0F6843ACCBF8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleChat.Infrastructure.Logger", "SimpleChat.Infrastructure.Logger\SimpleChat.Infrastructure.Logger.csproj", "{7E0A6D42-14A3-4BE9-934B-3D981CA897E3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleChat.Infrastructure.Logger.Test", "SimpleChat.Infrastructure.LoggerTest\SimpleChat.Infrastructure.Logger.Test.csproj", "{3A881BE1-928D-4411-86A6-2F3E0CBDE375}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleChat", "SimpleChat\SimpleChat.csproj", "{92CA5F96-646A-47C1-99B4-FDCCBBB6A224}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleChatNew", "SimpleChatNew\SimpleChatNew.csproj", "{51A90A52-840B-45BC-85E3-8B2F9FA27F8A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{76410E88-20A7-4734-95DA-C5EC5C75C121}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76410E88-20A7-4734-95DA-C5EC5C75C121}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76410E88-20A7-4734-95DA-C5EC5C75C121}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76410E88-20A7-4734-95DA-C5EC5C75C121}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AD12B32-7C9B-41F6-B13C-1E7887141946}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AD12B32-7C9B-41F6-B13C-1E7887141946}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AD12B32-7C9B-41F6-B13C-1E7887141946}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AD12B32-7C9B-41F6-B13C-1E7887141946}.Release|Any CPU.Build.0 = Release|Any CPU
+		{166A0A79-D384-4218-8261-0F6843ACCBF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{166A0A79-D384-4218-8261-0F6843ACCBF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{166A0A79-D384-4218-8261-0F6843ACCBF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{166A0A79-D384-4218-8261-0F6843ACCBF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E0A6D42-14A3-4BE9-934B-3D981CA897E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E0A6D42-14A3-4BE9-934B-3D981CA897E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E0A6D42-14A3-4BE9-934B-3D981CA897E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E0A6D42-14A3-4BE9-934B-3D981CA897E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A881BE1-928D-4411-86A6-2F3E0CBDE375}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A881BE1-928D-4411-86A6-2F3E0CBDE375}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A881BE1-928D-4411-86A6-2F3E0CBDE375}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A881BE1-928D-4411-86A6-2F3E0CBDE375}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92CA5F96-646A-47C1-99B4-FDCCBBB6A224}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92CA5F96-646A-47C1-99B4-FDCCBBB6A224}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92CA5F96-646A-47C1-99B4-FDCCBBB6A224}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92CA5F96-646A-47C1-99B4-FDCCBBB6A224}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51A90A52-840B-45BC-85E3-8B2F9FA27F8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51A90A52-840B-45BC-85E3-8B2F9FA27F8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51A90A52-840B-45BC-85E3-8B2F9FA27F8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51A90A52-840B-45BC-85E3-8B2F9FA27F8A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{76410E88-20A7-4734-95DA-C5EC5C75C121} = {6CB7BCAC-3812-4AB5-89F4-746AA47715CD}
+		{7AD12B32-7C9B-41F6-B13C-1E7887141946} = {E33F3ED3-FC7B-4872-BABB-EAB03E1CE162}
+		{166A0A79-D384-4218-8261-0F6843ACCBF8} = {847E4364-B5D0-4A62-9D6B-8E3EE85783B7}
+		{7E0A6D42-14A3-4BE9-934B-3D981CA897E3} = {FF212D73-B8A1-49ED-BFF5-E93F8D5DEECE}
+		{3A881BE1-928D-4411-86A6-2F3E0CBDE375} = {847E4364-B5D0-4A62-9D6B-8E3EE85783B7}
+		{92CA5F96-646A-47C1-99B4-FDCCBBB6A224} = {AA01DB42-BB64-49FD-A626-63A92B4970A3}
+		{51A90A52-840B-45BC-85E3-8B2F9FA27F8A} = {AA01DB42-BB64-49FD-A626-63A92B4970A3}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {65EE2672-919A-4DC5-A4E1-C83B4C60C1D8}
+	EndGlobalSection
+EndGlobal

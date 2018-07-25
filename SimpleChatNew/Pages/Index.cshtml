@@ -1,0 +1,54 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<html>
+<body>
+    <br />
+    <h2>SimpleChat Login</h2>
+    <br />
+    <form method="post">
+        <div asp-validation-summary="All">
+            <div>
+                <label asp-for="Model.Login">Login</label>
+                <input type="text" asp-for="Model.Login" />
+                <span asp-validation-for="Model.Login"></span>
+            </div>
+            <div>
+                <label asp-for="Model.Password"></label>
+                <input type="text" asp-for="Model.Password" />
+                <span asp-validation-for="Model.Password"></span>
+            </div>
+
+            <br />
+            <input type="submit" value="Login" />
+
+        </div>
+    </form>
+    <a asp-page="Registration">Regitration</a>
+    <div class="container">
+        <div class="row">&nbsp;</div>
+        <div class="row">
+            <div class="col-6">&nbsp;</div>
+            <div class="col-6">
+                <ul id="messagesList"></ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <hr />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">&nbsp;</div>
+            <div class="col-6">
+                Message...<input type="text" id="messageInput" />
+                <input type="button" id="sendButton" value=Name />
+            </div>
+        </div>
+    </div>
+    <script src="~/lib/signalr/signalr.js"></script>
+    <script src="~/js/chat.js"></script>
+</body>
+</html>
